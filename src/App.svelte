@@ -1,12 +1,30 @@
 <script>
   import Button from "./components/RequestButton/Button.svelte";
   import Navbar from "./components/Navbar/Navbar.svelte";
+  import Main from "./components/Main/Main.svelte";
 </script>
 
-<Navbar />
+<div class="grid">
+  <div class="header">
+    <Navbar />
+  </div>
+  <div class="main"><Main /></div>
+  <div class="advertisment" />
+  <div class="articles" />
+  <div class="footer" />
+</div>
 <Button />
 
 <style>
+  .header {
+    grid-area: header;
+  }
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main";
+  }
   /* latin-ext */
   @font-face {
     font-family: "Public Sans";

@@ -23,7 +23,7 @@
         /><path opacity=".15" d="M25.539 0L14.737 19.704h5.986L31.525 0z" /></g
       ></g
     ></svg
-  ><button
+  ><button class="hamburger"
     ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="11"
       ><g fill="#2D314D" fill-rule="evenodd"
         ><path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z" /></g
@@ -33,9 +33,14 @@
 </nav>
 
 <style>
+  .hamburger {
+    border: none;
+    background: none;
+  }
   .navbar {
-    width: 100%;
-    height: 10%;
+    justify-content: space-between;
+    align-items: center;
     display: flex;
+    margin: 1rem;
   }
 </style>
