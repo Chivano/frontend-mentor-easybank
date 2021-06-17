@@ -1,29 +1,27 @@
 <script>
-  import Button from "./components/RequestButton/Button.svelte";
   import Navbar from "./components/Navbar/Navbar.svelte";
   import Main from "./components/Main/Main.svelte";
+  import Info from "./components/Info/Info.svelte";
 </script>
 
+<Navbar />
 <div class="grid">
-  <div class="header">
-    <Navbar />
-  </div>
   <div class="main"><Main /></div>
+  <div class="info"><Info /></div>
   <div class="advertisment" />
   <div class="articles" />
   <div class="footer" />
 </div>
-<Button />
 
 <style>
-  .header {
-    grid-area: header;
+  .main {
+    grid-area: main;
   }
   .grid {
     display: grid;
-    grid-template-areas:
-      "header"
-      "main";
+    height: 100%;
+    grid-template-rows: 300px;
+    grid-template-areas: "main";
   }
   /* latin-ext */
   @font-face {

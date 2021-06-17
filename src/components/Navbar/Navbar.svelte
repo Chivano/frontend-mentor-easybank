@@ -41,6 +41,6 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
-    margin: 1rem;
+    height: 10%;
   }
 </style>
