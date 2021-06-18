@@ -13,7 +13,6 @@
 
 <style>
   .infowrapper {
-    font-family: Public sans;
     padding: 2rem;
     text-align: center;
   }

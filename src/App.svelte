@@ -2,14 +2,16 @@
   import Navbar from "./components/Navbar/Navbar.svelte";
   import Main from "./components/Main/Main.svelte";
   import Info from "./components/Info/Info.svelte";
+  import Advertisement from "./components/Advertisement/Advertisement.svelte";
+  import Articles from "./components/Articles/Articles.svelte";
 </script>
 
 <Navbar />
 <div class="grid">
   <div class="main"><Main /></div>
   <div class="info"><Info /></div>
-  <div class="advertisment" />
-  <div class="articles" />
+  <div class="advertisment"><Advertisement /></div>
+  <div class="articles"><Articles /></div>
   <div class="footer" />
 </div>
 

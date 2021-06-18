@@ -11,7 +11,7 @@
     color: white;
     font-family: Public Sans;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     border-radius: 2rem;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     background: linear-gradient(
