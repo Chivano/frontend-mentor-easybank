@@ -4,6 +4,8 @@
   import Info from "./components/Info/Info.svelte";
   import Advertisement from "./components/Advertisement/Advertisement.svelte";
   import Articles from "./components/Articles/Articles.svelte";
+  import Footer from "./components/Footer/Footer.svelte";
+  import "@fortawesome/fontawesome-free/js/all.js";
 </script>
 
 <Navbar />
@@ -12,19 +14,23 @@
   <div class="info"><Info /></div>
   <div class="advertisment"><Advertisement /></div>
   <div class="articles"><Articles /></div>
-  <div class="footer" />
+  <div class="footer"><Footer /></div>
 </div>
 
 <style>
-  .main {
-    grid-area: main;
+  @media screen and (min-width: 700px) {
+    .grid {
+      display: grid;
+      height: 100%;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "info main";
+    }
+    .info {
+      grid-area: info;
+    }
   }
-  .grid {
-    display: grid;
-    height: 100%;
-    grid-template-rows: 300px;
-    grid-template-areas: "main";
-  }
+
   /* latin-ext */
   @font-face {
     font-family: "Public Sans";
