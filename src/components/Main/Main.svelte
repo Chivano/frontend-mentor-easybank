@@ -2,53 +2,50 @@
 </script>
 
 <main class="main">
-  <img class="mobile-background" src="./bg-intro-mobile.svg" />
-  <img class="picture" src="./image-mockups.png" />
+  <div class="background" />
+  <div class="picture" />
 </main>
 
 <style>
   .main {
-    height: 100%;
-    position: relative;
+    display: grid;
+    height: 500px;
   }
   .picture {
-    clip-path: inset(140px 0px 0px 0px);
-    transform: translateY(-140px);
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    position: absolute;
+    background: url("/image-mockups.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 1;
   }
-  .desktop-background {
-    display: none;
-  }
-  .mobile-background {
-    position: absolute;
-    width: 100%;
 
-    left: 0;
-    right: 0;
-    transform: scaleY(0.8);
-    transform-origin: top;
+  .background {
+    background: url("/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    grid-column: 1;
+    grid-row: 1;
+    background-size: cover;
   }
   @media screen and (min-width: 700px) {
     .main {
-      height: 100%;
+      display: grid;
       position: relative;
+      height: 500px;
     }
     .picture {
-      clip-path: inset(80px 0px 0px 0px);
-      transform: translateY(-80px);
-      width: 80%;
+      grid-column: 1;
+      grid-row: 1;
+      background-position-y: -120px;
     }
-    .desktop-background {
-      position: absolute;
-      display: block;
-      width: 100%;
-      transform: translateY(-250px);
-      transform-origin: top;
+    .background {
+      background: url("/bg-intro-desktop.svg");
+      background-repeat: no-repeat;
+      grid-column: 1;
+      grid-row: 1;
     }
     .mobile-background {
+      background-size: cover;
       display: none;
     }
   }

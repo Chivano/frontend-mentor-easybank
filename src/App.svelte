@@ -24,10 +24,21 @@
       height: 100%;
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "info main";
+      grid-template-areas:
+        "info main"
+        "advertisment advertisment";
     }
     .info {
       grid-area: info;
+    }
+    .main {
+      grid-area: main;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      z-index: 10;
+    }
+    .advertisment {
+      grid-area: advertisment;
     }
   }
 
